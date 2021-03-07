@@ -34,10 +34,11 @@ function proj1Info(){
         gitLink.style.color = "#e9d3d7"
         gitLink.style.backgroundColor = "#3a033a"
         gitLink.style.borderRadius = "8px"
-        gitLink.style.cursor ="pointer"
-       
+        gitLink.style.cursor = "pointer"
+
+           
       
-        link.appendChild(gitLink)
+        link.appendChild(gitLink)    
         para.appendChild(link)
        
         let breaK2 = document.createElement("br")
@@ -165,21 +166,24 @@ function proj2Info(){
 
 function nav(){
 
-    let link = document.querySelectorAll("a")
+   const link = document.querySelectorAll("a")    
 
     for (let el of link ){ 
-        el.addEventListener("mouseover", () => {
-        el.style.backgroundColor ="#3a033a"
-        el.style.padding = ".5em"
-        el.style.borderRadius = "8px"
-    })
-
-        el.addEventListener("mouseout", () => {
-            el.style.backgroundColor = "transparent"
-            el.style.padding = ".25em .25em"
-            el.style.borderRadius = "0"
+            el.addEventListener("mouseover", () => {
+            el.style.backgroundColor ="#3a033a"
+            el.style.padding = ".5em"
+            el.style.borderRadius = "8px"
         })
-    }
+    
+            el.addEventListener("mouseout", () => {
+                el.style.backgroundColor = "transparent"
+                el.style.padding = ".25em .25em"
+                el.style.borderRadius = "0"
+            })
 
+           
+        } 
+       
 
+    
 }

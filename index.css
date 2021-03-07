@@ -4,13 +4,12 @@
     border: 0;     
     list-style: none;
     text-decoration: none;
- 
 }
+
 
 html, body{
     width: 100%;
-    height: 100%;
-    
+    height: 100%; 
 }
 
 
@@ -21,12 +20,8 @@ body{
     grid-template-columns: 100px 1fr;
 }
 
-nav{
-    position: relative;
-}
 
 #nav{
-
     width: 100px;
     height: 100%;
     display: flex;
@@ -39,20 +34,20 @@ nav{
     background-color: rgb(1, 35, 86,0.3);   
 }
 
+
 a {
     color:#e9d3d7;
     padding: .25em .25em;  
 }
+
 
 main{
     display: grid;
     font-size: 16px;
     font-family: fantasy;
     position: relative;
-    /* grid-template-rows: 1fr .40fr 2fr .25fr 2fr 1fr .25fr 2fr 2fr; */
     grid-template-columns: repeat(6, 16.66%);
-    grid-template-rows: .75fr .25fr 2fr .25fr 2fr 1fr .25fr 2fr 2fr;
- 
+    grid-template-rows: .35fr .25fr 1fr .25fr 1.5fr .25fr .25fr 1fr 1fr .25fr
 }
 
 main::before {
@@ -68,26 +63,22 @@ main::before {
 }
 
 
-
 #header{
     grid-column: 1/7;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     padding-left: 20%;
-    position: relative;
     font-size: 20px;
 }
 
 h1 {
-    /* z-index: 1; */
     overflow: hidden; 
     white-space: nowrap; 
     letter-spacing: 5px;
     animation: 
     typing 2.5s steps(100),
     blink-caret .75s step-end infinite;
-  
 }
 
 
@@ -96,14 +87,15 @@ h1 {
   to { width: 100% }
 }
 
+
 #title{
     grid-column: 1/7;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding-left: 30%;
-    position: relative;
 }
+
 
 #webDev{
     overflow: hidden; 
@@ -115,23 +107,20 @@ h1 {
 }
 
 
-
  #picture{
     grid-column: 1/7;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    position: relative;
-
 }
+
 
 #pursuitPic{
-    /* height: 250px; */
     width:30%;
     animation: fadeIn ease 1.5s 2s normal both;
-
 }
+
 
 @keyframes fadeIn {
     0% {opacity:0;}
@@ -142,11 +131,10 @@ h1 {
 span{
   display: flex;
   justify-content: center;
-  position: relative;
-  
 }
 
- #keyWords{
+
+ #keyWords{ 
     font-size: 14px; 
     letter-spacing: 1.5px; 
     overflow: hidden;   
@@ -155,8 +143,7 @@ span{
     animation: fadeIn ease normal both , 
                 animated-text 7s steps(70,end) 2s 1 normal both,
                 animated-cursor 600ms steps(29,end) infinite ;
-    animation-delay: 2.75s;
-  
+    animation-delay: 2.75s;  
  }   
 
  
@@ -164,13 +151,13 @@ span{
  @keyframes animated-text{
     from{width: 0;}
     to{width: 100%;}
-  }
+}
   
 
 @keyframes animated-cursor{
     from{border-right-color: ivory;}
     to{border-right-color: transparent;}
-  }
+}
 
 
 #aboutME{
@@ -184,6 +171,7 @@ span{
     letter-spacing: 5px;
 }
 
+
 #aboutContent{
     grid-column: 1/5;
     display: flex;
@@ -192,12 +180,14 @@ span{
     padding-left: 10%;
 }
 
+
 #aboutContent p {
     padding: 5%;
     background-color: rgb(1, 35, 86,0.6);
     border-radius: 20px;
     font-family: monospace;
 }
+
 
 #aboutPic{
     display: flex;
@@ -206,8 +196,9 @@ span{
     position: relative;
 }
 
+
 #aboutPic img{
-    width: 70%;
+    width: 90%;
     position: absolute;
 }
 
@@ -224,9 +215,11 @@ span{
     background-color: rgb(1, 35, 86,0.1);
 }
 
+
 #skills i{
     font-size: 32px;
 }
+
 
 #projects{
     grid-column: 1/ 7;
@@ -238,9 +231,11 @@ span{
     letter-spacing: 5px;
 }
 
+
 .projName{
     font-size: 20px;
 }
+
 
 #projectDetails{
     grid-column: 1 /4;
@@ -250,13 +245,15 @@ span{
     align-items: center;
 }
 
+
 #projectDetails p{
     background-color:rgb(1, 35, 86,0.6); 
     border-radius: 20px;
     padding: 1%;
 }
 
- #projectPic{
+
+#projectPic{
     grid-column: 4 /7;
     display: flex;
     flex-direction: row;
@@ -265,11 +262,9 @@ span{
 } 
 
 #projectPic img{
-  width: 75%;
+  width: 90%;
   border-radius: 2px;
 }
-
-
 
 #project2Details{
     grid-column: 1/4;
@@ -279,11 +274,13 @@ span{
     align-items: center;   
 }
 
+
 #project2Details p{
 background-color:rgb(1, 35, 86,0.6); 
 border-radius: 20px;
 padding: 1%;
 }
+
 
 #project2Pic{
     grid-column: 4/7;
@@ -293,11 +290,11 @@ padding: 1%;
     align-items: center;
 }
 
+
 #project2Pic img{
-    width: 80%;
+    width: 90%;
     border-radius: 2px; 
 }
-
 
 
 .info {
@@ -310,75 +307,191 @@ padding: 1%;
 }
 
 
-
-/* 
-
-
-@media screen and (max-width: 700px){
- 
- body{
-    grid-template-columns: 100%;
-    grid-template-rows: 100px 1fr;
- }
-
-
-main{
-    padding-top: 100px;
-    grid-template-rows: .33% .33% .33% ;
- 
+.info:hover { 
+    transform: scale(1.1); 
 }
 
-    
- #nav{
-    width: 100%;
-    height: 100px;
-    flex-direction: row;
-    justify-content: space-evenly;
- 
+
+footer{
+    grid-column: 1 / 7 ;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    font-size: 20px;
+    font-family: monospace;
+    letter-spacing: 2px;
+    background-color: rgba(72, 103, 151, 0.1);
 }
-h1 {
-    animation: 
-    typing 1.5s steps(80),
-    blink-caret .75s step-end infinite;
-    
+
+
+
+
+
+
+@media screen and (max-width: 980px){
+
+ main{
+    grid-template-rows: .15fr .15fr .75fr .15fr .80fr .5fr .15fr .25fr .35fr .5fr .35fr .5fr .25fr; 
 }
-#webDev{
-    animation: fadeIn ease 1.5s 1s normal both;
-}
+
 #header{
-    padding-left: 5%;
+    order:0;
 }
 
-
+h1{
+    animation: none;
+}
 
 #title{
-    padding-left: 7%;
+    order:1;
+}
+
+#webDev{
+    animation: none;
 }
 
 #picture{
+    order: 2;
+}
 
+#pursuitPic{
+    width: 50%;
+    animation: none;
+}
+
+#keyWords{
+    animation: none;
+    border: none;
+}
+
+#aboutME{
+    order: 3;
+}
+
+#aboutPic{
+    align-items: center;
+    grid-column: 1/7;
+    order: 4;
+}
+
+#aboutPic img{
+    width: 40%;  
+}
+
+#aboutContent{
+    order: 5;
+    grid-column: 1/7;
+    justify-content: center;
+    padding-left: 0px;
+}
+
+
+#projects{
+    order:6;
+}
+
+#skills{
+    order:7;
+}
+
+#projectDetails{
+    order: 8;
+    grid-column: 1/7;
+}
+
+#projectPic{
+    order: 9;
+    grid-column: 1/7;
+    justify-content: center;
+}
+
+#project2Details{
+    order: 10;
+    grid-column: 1/7;
+    margin-top: 3%;
+}
+
+#project2Pic{
+    order: 11;
+    grid-column: 1/7;
+    justify-content: center;
+}
+
+footer{
+    order: 12;
+}
+
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 800px){
+
+body{   
+    grid-template-columns:none;
+    grid-template-rows: 100px 1fr;    
+}
+
+#nav{
     width: 100%;
+    height: 100px;
+    flex-direction: row;
+    background-color: #010920; 
+    z-index: 1;
+}
+
+main{
+    grid-template-columns: repeat(6, 16.66%);
+    grid-template-rows: .15fr .15fr .75fr .15fr .80fr .5fr .15fr .25fr .35fr .5fr .35fr .5fr .25fr;
+}
+
+
+}
+
+
+
+
+ 
+@media screen and (max-width: 650px){
+
+*{
+    flex-wrap: wrap;
+}
+
+main{
+    grid-template-rows: .15fr .05fr .25fr .15fr .5fr 1fr  .15fr .25fr repeat(4, .25fr) .15fr
+}
+
+#header{
+    padding-left: 5%;
+}
+    
+h1 {
+    letter-spacing: 0px;
+}
+  
+#aboutPic img{
+    width:200px;
+}
+
+    
+#keyWords{
+    white-space: pre-wrap;
+    letter-spacing: 0px; 
+}  
+
+#skills{
+    flex-wrap: nowrap;
+}
+
+
+
 } 
 
 
-#pursuitPic{
-    height: 250px;
-     animation: fadeIn ease 1.5s 2s normal both;
-    
-
-  }
 
 
-
-  #keyWords{
-    padding-left: 15%;
-    padding-right: 15%;
-    align-items: center;
-    white-space: normal;  
-    animation: fadeIn ease 1.5s 2s normal both;
-    border: none;
-  
- }   
-
-}
-  */
