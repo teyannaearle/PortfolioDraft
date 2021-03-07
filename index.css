@@ -58,7 +58,7 @@ main::before {
     bottom: 0px;
     left: 0px;
     opacity: 0.50;
-    background-image: url(giphy3.gif);
+    background-image: url(media/giphy3.gif);
     z-index: -1;
 }
 
