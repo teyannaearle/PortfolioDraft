@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () =>{
     proj2Info()
     nav()
 
+
 })
 
 function proj1Info(){
@@ -13,8 +14,8 @@ function proj1Info(){
         let para = document.createElement("p")
 
         para.textContent = `A guessing game in which you attempt to guess a word, letter by letter.`
-        para.style.textAlign = "center"
-        para.style.margin = "1em"
+        para.className = "para"
+
 
         button.replaceWith(para)
 
@@ -28,15 +29,9 @@ function proj1Info(){
 
         let gitLink = document.createElement("button")
 
-        gitLink.textContent = `check it out!`
-        gitLink.style.marginTop = "1em"
-        gitLink.style.padding = "1%"
-        gitLink.style.color = "#e9d3d7"
-        gitLink.style.backgroundColor = "#3a033a"
-        gitLink.style.borderRadius = "8px"
-        gitLink.style.cursor = "pointer"
+        gitLink.textContent = `Check it out!`
+        gitLink.className = `button`
 
-           
       
         link.appendChild(gitLink)    
         para.appendChild(link)
@@ -47,13 +42,8 @@ function proj1Info(){
 
         let lessButton = document.createElement("button")
 
-        lessButton.textContent =`see less`
-        lessButton.style.marginTop = "1em"
-        lessButton.style.padding = "1%"
-        lessButton.style.color = "#e9d3d7"
-        lessButton.style.backgroundColor = "#3a033a"
-        lessButton.style.borderRadius = "8px"
-        lessButton.style.cursor ="pointer"
+        lessButton.textContent =`See Less`
+        lessButton.className = `button`
 
         para.appendChild(lessButton)
 
@@ -62,13 +52,10 @@ function proj1Info(){
     lessButton.addEventListener("click", () => {
         let ogButton = document.createElement("button")
 
-        ogButton.textContent = "More info"
+        ogButton.textContent = "More Info"
         ogButton.id = "proj1"
-        ogButton.style.marginTop = "1%"
-        ogButton.style.padding = "1%"
-        ogButton.style.color = "#e9d3d7"
-        ogButton.style.backgroundColor = "#3a033a" 
-        ogButton.style.borderRadius = "8px"
+        ogButton.className = "button"
+
 
         para.replaceWith(ogButton)
         proj1Info()
@@ -92,8 +79,8 @@ function proj2Info(){
         let para = document.createElement("p")
 
         para.textContent = `Journey into a strange new world and prove that a person's choices can trump fate in this text based adventure.`
-        para.style.textAlign = "center"
-        para.style.margin = "1em"
+        para.className = "para"
+
 
         button.replaceWith(para)
 
@@ -107,13 +94,9 @@ function proj2Info(){
 
         let gitLink = document.createElement("button")
 
-        gitLink.textContent = `check it out!`
-        gitLink.style.marginTop = "1em"
-        gitLink.style.padding = "1%"
-        gitLink.style.color = "#e9d3d7"
-        gitLink.style.backgroundColor = "#3a033a"
-        gitLink.style.borderRadius = "8px"
-        gitLink.style.cursor ="pointer"
+        gitLink.textContent = `Check it out!`
+        gitLink.className = `button`
+
 
       
         link.appendChild(gitLink)
@@ -125,13 +108,9 @@ function proj2Info(){
 
         let lessButton = document.createElement("button")
 
-        lessButton.textContent =`see less`
-        lessButton.style.marginTop = "1em"
-        lessButton.style.padding = "1%"
-        lessButton.style.color = "#e9d3d7"
-        lessButton.style.backgroundColor = "#3a033a"
-        lessButton.style.borderRadius = "8px"
-        lessButton.style.cursor ="pointer"
+        lessButton.textContent = `See Less`
+        lessButton.className = `button`
+
 
         para.appendChild(lessButton)
 
@@ -140,14 +119,9 @@ function proj2Info(){
     lessButton.addEventListener("click", () => {
         let ogButton = document.createElement("button")
 
-        ogButton.textContent = "More info"
+        ogButton.textContent = "More Info"
         ogButton.id = "proj2"
-        ogButton.style.marginTop = "1%"
-        ogButton.style.padding = "1%"
-        ogButton.style.color = "#e9d3d7"
-        ogButton.style.backgroundColor = "#3a033a" 
-        ogButton.style.borderRadius = "8px"
-        ogButton.style.cursor ="pointer"
+        ogButton.className = "button"
 
         para.replaceWith(ogButton)
         proj2Info()
@@ -166,24 +140,40 @@ function proj2Info(){
 
 function nav(){
 
-   const link = document.querySelectorAll("a")    
+   const link = document.querySelectorAll("a")     
+   const width = parseInt(window.innerWidth)
 
-    for (let el of link ){ 
+
+    if (width >= 800){
+        for (let el of link ){ 
             el.addEventListener("mouseover", () => {
-            el.style.backgroundColor ="#3a033a"
-            el.style.padding = ".5em"
-            el.style.borderRadius = "8px"
+            el.className = "mouseover"
         })
     
             el.addEventListener("mouseout", () => {
-                el.style.backgroundColor = "transparent"
-                el.style.padding = ".25em .25em"
-                el.style.borderRadius = "0"
+                el.className = "mouseout"
             })
 
            
         } 
        
+    } else if (width < 800){
+        for (let el of link ){ 
+            
+            el.addEventListener("touchstart", () => {
+                el.className = "mouseover"
+            })
+        
+            el.addEventListener("touchend", () => {
+                el.className = "mouseout"
+    
+            })
+           
+           
+        }
+
+    }
 
     
 }
+
