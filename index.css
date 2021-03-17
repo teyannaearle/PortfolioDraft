@@ -21,7 +21,7 @@ body{
 }
 
 
-#nav {
+#nav{
     width: 100px;
     height: 100%;
     display: flex;
@@ -35,19 +35,18 @@ body{
 }
 
 
-
-
-
-a {
+a{
     color:#e9d3d7;
     padding: .25em .25em;  
 }
+
 
 .mouseover{
     background-color: #3a033a;
     padding: .5em;
     border-radius: 8px;
 }
+
 
 .mouseout{
     background-color: transparent;
@@ -65,7 +64,7 @@ main{
     grid-template-rows: .35fr .25fr 1fr .25fr 1.5fr .25fr .25fr 1fr 1fr .25fr
 }
 
-main::before {
+main::before{
     content: '';
     position: absolute;
     top: 0px;
@@ -96,7 +95,7 @@ h1 {
 }
 
 
-@keyframes typing {
+@keyframes typing{
   from { width: 0 }
   to { width: 100% }
 }
@@ -135,7 +134,7 @@ h1 {
 }
 
 
-@keyframes fadeIn {
+@keyframes fadeIn{
     0% {opacity:0;}
     100% {opacity:1;}
 }
@@ -188,7 +187,7 @@ span{
 }
 
 
-#aboutContent p {
+#aboutContent p{
     padding: 5%;
     background-color: rgb(1, 35, 86,0.6);
     border-radius: 20px;
@@ -211,7 +210,7 @@ span{
 
 
 #skills{
-    grid-column: 1 / 7 ;
+    grid-column: 1/7;
     display: flex;
     flex-direction: row-reverse;
     justify-content:space-evenly;
@@ -244,9 +243,8 @@ span{
 }
 
 
-
 #projectPic{
-    grid-column: 4 /7;
+    grid-column: 4/7;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -268,9 +266,9 @@ span{
 
 
 .details p{
-background-color:rgb(1, 35, 86,0.6); 
-border-radius: 20px;
-padding: 1%;
+    background-color:rgb(1, 35, 86,0.6); 
+    border-radius: 20px;
+    padding: 1%;
 }
 
 
@@ -381,7 +379,6 @@ h1{
     padding-left: 0px;
 }
 
-
 #projects{
     order:6;
 }
@@ -440,9 +437,6 @@ body{
     z-index: 1;
 }
 
-
-
-
 main{
     grid-template-columns: repeat(6, 16.66%);
     grid-template-rows: .15fr .15fr .75fr .15fr .80fr .5fr .15fr .25fr .35fr .5fr .35fr .5fr .25fr;
@@ -476,7 +470,6 @@ h1 {
 #aboutPic img{
     width:200px;
 }
-
     
 #keyWords{
     padding-left: 5%;

@@ -2,13 +2,13 @@ document.addEventListener("DOMContentLoaded", () =>{
     proj1Info()
     proj2Info()
     nav()
-
-
 })
+
 
 function proj1Info(){
 
     const button = document.getElementById("proj1")
+
     button.addEventListener("click", () => {
        
         let para = document.createElement("p")
@@ -22,7 +22,6 @@ function proj1Info(){
         let breaK = document.createElement("br")
         para.appendChild(breaK)
 
-    
 
         let link = document.createElement("a")
         link.href = "https://github.com/teyannaearle/Snowman-Game"
@@ -49,20 +48,20 @@ function proj1Info(){
 
 
 
-    lessButton.addEventListener("click", () => {
-        let ogButton = document.createElement("button")
+        lessButton.addEventListener("click", () => {
+            let ogButton = document.createElement("button")
 
-        ogButton.textContent = "More Info"
-        ogButton.id = "proj1"
-        ogButton.className = "button"
+            ogButton.textContent = "More Info"
+            ogButton.id = "proj1"
+            ogButton.className = "button"
 
 
-        para.replaceWith(ogButton)
-        proj1Info()
+            para.replaceWith(ogButton)
+            proj1Info()
      
 
 
-    })    
+        })    
     
 
     })
@@ -71,9 +70,11 @@ function proj1Info(){
 }
 
 
+
 function proj2Info(){
 
     const button = document.getElementById("proj2")
+
     button.addEventListener("click", () => {
        
         let para = document.createElement("p")
@@ -87,7 +88,6 @@ function proj2Info(){
         let breaK = document.createElement("br")
         para.appendChild(breaK)
 
-    
 
         let link = document.createElement("a")
         link.href = "https://github.com/teyannaearle/Hellington"
@@ -97,11 +97,11 @@ function proj2Info(){
         gitLink.textContent = `Check it out!`
         gitLink.className = `button`
 
-
       
         link.appendChild(gitLink)
         para.appendChild(link)
        
+
         let breaK2 = document.createElement("br")
         para.appendChild(breaK2)
       
@@ -116,27 +116,23 @@ function proj2Info(){
 
 
 
-    lessButton.addEventListener("click", () => {
-        let ogButton = document.createElement("button")
+        lessButton.addEventListener("click", () => {
+            let ogButton = document.createElement("button")
 
-        ogButton.textContent = "More Info"
-        ogButton.id = "proj2"
-        ogButton.className = "button"
+            ogButton.textContent = "More Info"
+            ogButton.id = "proj2"
+            ogButton.className = "button"
 
-        para.replaceWith(ogButton)
-        proj2Info()
+            para.replaceWith(ogButton)
+            proj2Info()
      
-
-
-    })    
-    
-
-
-
+        })   
 
     })
 
 }
+
+
 
 function nav(){
 
@@ -147,29 +143,22 @@ function nav(){
     if (width >= 800){
         for (let el of link ){ 
             el.addEventListener("mouseover", () => {
-            el.className = "mouseover"
-        })
-    
+                el.className = "mouseover"
+            })
             el.addEventListener("mouseout", () => {
                 el.className = "mouseout"
-            })
-
-           
+            })           
         } 
        
     } else if (width < 800){
-        for (let el of link ){ 
-            
+        for (let el of link ){           
             el.addEventListener("touchstart", () => {
                 el.className = "mouseover"
             })
-        
             el.addEventListener("touchend", () => {
                 el.className = "mouseout"
     
-            })
-           
-           
+            })           
         }
 
     }
