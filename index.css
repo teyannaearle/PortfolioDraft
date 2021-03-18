@@ -198,6 +198,7 @@ span{
 #aboutPic{
     display: flex;
     justify-content: center;
+    align-items: center;
     grid-column: 5/7;
     position: relative;
 }
@@ -446,8 +447,13 @@ main{
 }
 
 
+@media screen and (max-width: 700px){
 
+main{
+    grid-template-rows: .15fr .05fr .25fr .15fr .75fr 1fr  .15fr .25fr repeat(4, .25fr) .15fr
+}
 
+}
  
 @media screen and (max-width: 650px){
 
@@ -491,6 +497,10 @@ h1 {
 
 
 @media screen and (max-width: 480px){
+
+    main{
+        grid-template-rows: .15fr .05fr .25fr .15fr .38fr 1fr  .15fr .25fr repeat(4, .25fr) .15fr
+    }
 
     #skills{
         flex-wrap:wrap;
