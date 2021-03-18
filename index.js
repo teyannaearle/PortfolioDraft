@@ -136,8 +136,9 @@ function proj2Info(){
 
 function nav(){
 
-   const link = document.querySelectorAll("a")     
+   const link = document.querySelectorAll("li")     
    const width = parseInt(window.innerWidth)
+
 
    for (let el of link ){ 
     el.addEventListener("mouseover", () => {
@@ -146,7 +147,9 @@ function nav(){
     el.addEventListener("mouseout", () => {
         el.className = "mouseout"
     })           
-} 
+    } 
+
+
     // if (width >= 800){
     //     for (let el of link ){ 
     //         el.addEventListener("mouseover", () => {
