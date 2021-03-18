@@ -537,6 +537,10 @@ h1 {
         grid-template-rows: .15fr .05fr .25fr .15fr .38fr 1fr  .15fr .25fr repeat(4, .25fr) .15fr
     }
 
+  li{
+      padding-right: 5px;
+  }
+
     #skills{
         flex-wrap:wrap;
     }
