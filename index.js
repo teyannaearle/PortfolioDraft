@@ -139,29 +139,36 @@ function nav(){
    const link = document.querySelectorAll("a")     
    const width = parseInt(window.innerWidth)
 
-
-    if (width >= 800){
-        for (let el of link ){ 
-            el.addEventListener("mouseover", () => {
-                el.className = "mouseover"
-            })
-            el.addEventListener("mouseout", () => {
-                el.className = "mouseout"
-            })           
-        } 
+   for (let el of link ){ 
+    el.addEventListener("mouseover", () => {
+        el.className = "mouseover"
+    })
+    el.addEventListener("mouseout", () => {
+        el.className = "mouseout"
+    })           
+} 
+    // if (width >= 800){
+    //     for (let el of link ){ 
+    //         el.addEventListener("mouseover", () => {
+    //             el.className = "mouseover"
+    //         })
+    //         el.addEventListener("mouseout", () => {
+    //             el.className = "mouseout"
+    //         })           
+    //     } 
        
-    } else if (width < 800){
-        for (let el of link ){           
-            el.addEventListener("touchstart", () => {
-                el.className = "mouseover"
-            })
-            el.addEventListener("touchend", () => {
-                el.className = "mouseout"
+    // } else if (width < 800){
+    //     for (let el of link ){           
+    //         el.addEventListener("touchstart", () => {
+    //             el.className = "mouseover"
+    //         })
+    //         el.addEventListener("touchend", () => {
+    //             el.className = "mouseout"
     
-            })           
-        }
+    //         })           
+    //     }
 
-    }
+    // }
 
     
 }
