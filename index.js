@@ -137,7 +137,6 @@ function proj2Info(){
 function nav(){
 
    const link = document.querySelectorAll("li")     
-   const width = parseInt(window.innerWidth)
 
 
    for (let el of link ){ 
@@ -148,30 +147,6 @@ function nav(){
         el.className = "mouseout"
     })           
     } 
-
-
-    // if (width >= 800){
-    //     for (let el of link ){ 
-    //         el.addEventListener("mouseover", () => {
-    //             el.className = "mouseover"
-    //         })
-    //         el.addEventListener("mouseout", () => {
-    //             el.className = "mouseout"
-    //         })           
-    //     } 
-       
-    // } else if (width < 800){
-    //     for (let el of link ){           
-    //         el.addEventListener("touchstart", () => {
-    //             el.className = "mouseover"
-    //         })
-    //         el.addEventListener("touchend", () => {
-    //             el.className = "mouseout"
-    
-    //         })           
-    //     }
-
-    // }
 
     
 }
