@@ -40,9 +40,11 @@ a{
     padding: .25em .25em;  
 }
 
+
 li:hover {
     font-size: 1.12em;  
-  } 
+} 
+
 
 .mouseover{
     background-color: #3a033a;
@@ -66,7 +68,6 @@ main{
     position: relative;
     grid-template-columns: repeat(6, 16.66%);
     grid-template-rows: .30fr .25fr 1fr .25fr 1.5fr .25fr .25fr 1fr 1fr .25fr
-
 }
 
 main::before{
@@ -152,7 +153,6 @@ span{
 
 
  #keyWords{ 
-
     font-size: 14px; 
     letter-spacing: 1.5px; 
     overflow: hidden;   
@@ -490,12 +490,10 @@ h1 {
     letter-spacing: 0px;
 }
   
-
 #aboutPic img{
     width:200px;
 }
     
-
 #keyWords{
     padding-left: 5%;
     white-space: pre-wrap;
@@ -520,25 +518,25 @@ h1 {
 
 @media screen and (max-width: 480px){
 
-    main{
-        grid-template-rows: .15fr .05fr .25fr .15fr .38fr 1fr  .15fr .25fr repeat(4, .25fr) .15fr
-    }
+main{
+    grid-template-rows: .15fr .05fr .25fr .15fr .38fr 1fr  .15fr .25fr repeat(4, .25fr) .15fr
+}
 
-  li{
-      padding-right: 5px;
-  }
+li{
+    padding-right: 5px;
+}
 
-    #skills{
-        flex-wrap:wrap;
-    }
+#skills{
+    flex-wrap:wrap;
+}
 
-    #skills i {
-        margin-right: .25em;
-    }
+#skills i {
+    margin-right: .25em;
+}
 
-    #skills p {
-        margin-right: .25em;
-        order: -1;
-    }
+#skills p {
+    margin-right: .25em;
+    order: -1;
+}
 
 }
