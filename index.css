@@ -260,10 +260,10 @@ span{
     font-size: 20px;
 }
 
-.projSpecified{
+/* .projSpecified{
     font-family: monospace;
     text-align: center;
-}
+} */
 
 #projectPic{
     grid-column: 4/7;
@@ -295,6 +295,8 @@ span{
     background-color:rgb(1, 35, 86,0.6); 
     border-radius: 20px;
     padding: 1%;
+    font-family: monospace;
+    text-align: center;
 }
 
 
