@@ -181,8 +181,8 @@ span{
     align-items: flex-end;
     font-size: 32px;
     letter-spacing: 5px;
-    animation: fadeIn 4s both ;
-    animation-delay: 3s ;
+    /* animation: fadeIn 4s both ; */
+    /* animation-delay: 3s ; */
 }
 
 
@@ -192,8 +192,8 @@ span{
     flex-direction: row;
     align-items: center;
     padding-left: 10%;
-    animation: fadeIn 4s both ;
-    animation-delay: 3s ;
+    /* animation: fadeIn 4s both ; */
+    /* animation-delay: 3s ; */
 }
 
 
@@ -211,8 +211,8 @@ span{
     align-items: center;
     grid-column: 5/7;
     position: relative;
-    animation: fadeIn 4s both ;
-    animation-delay: 3s ;
+    /* animation: fadeIn 4s both ; */
+    /* animation-delay: 3s ; */
 }
 
 
@@ -232,8 +232,8 @@ span{
     font-family: monospace;
     letter-spacing: 2px;
     background-color: rgb(1, 35, 86,0.1);
-    animation: fadeIn 4s both ;
-    animation-delay: 3s ;
+    /* animation: fadeIn 4s both ;
+    animation-delay: 3s ; */
 }
 
 
@@ -250,15 +250,19 @@ span{
     align-items: flex-end;
     font-size: 32px;
     letter-spacing: 5px;
-    animation: fadeIn 4s both ;
-    animation-delay: 3s ;
+    /* animation: fadeIn 4s both ;
+    animation-delay: 3s ; */
 }
 
 
 .projName{
+    font-family: monospace;
     font-size: 20px;
 }
 
+.projSpecified{
+    font-family: monospace;
+}
 
 #projectPic{
     grid-column: 4/7;
@@ -266,8 +270,8 @@ span{
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    animation: fadeIn 4s both ;
-    animation-delay: 3s ;
+    /* animation: fadeIn 4s both ;
+    animation-delay: 3s ; */
 } 
 
 #projectPic img{
@@ -281,8 +285,8 @@ span{
     flex-direction: column;
     justify-content: center;
     align-items: center;   
-    animation: fadeIn 4s both ;
-    animation-delay: 3s ;
+    /* animation: fadeIn 4s both ;
+    animation-delay: 3s ; */
 }
 
 
@@ -300,8 +304,8 @@ span{
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    animation: fadeIn 4s both ;
-    animation-delay: 3s ;
+    /* animation: fadeIn 4s both ;
+    animation-delay: 3s ; */
 }
 
 
@@ -341,8 +345,8 @@ footer{
     font-family: monospace;
     letter-spacing: 2px;
     background-color: rgba(72, 103, 151, 0.1);
-    animation: fadeIn 4s both ;
-    animation-delay: 3s ;
+    /* animation: fadeIn 4s both ;
+    animation-delay: 3s ; */
 }
 
 

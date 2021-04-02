@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () =>{
     proj1Info()
     proj2Info()
     nav()
+    scrollTop()
 })
 
 
@@ -149,5 +150,15 @@ function nav(){
     } 
 
     
+}
+
+function scrollTop(){
+
+    const scroll = document.getElementById("scroll")
+
+    scroll.addEventListener("click", () => {
+    document.body.scrollTop = 0
+    document.documentElement.scrollTop = 0
+    })
 }
 
