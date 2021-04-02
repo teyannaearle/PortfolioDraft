@@ -262,6 +262,7 @@ span{
 
 .projSpecified{
     font-family: monospace;
+    text-align: center;
 }
 
 #projectPic{
@@ -291,7 +292,6 @@ span{
 
 
 .details p{
- 
     background-color:rgb(1, 35, 86,0.6); 
     border-radius: 20px;
     padding: 1%;
